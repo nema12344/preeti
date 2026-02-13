@@ -1,0 +1,167 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Preeti, Will You Marry Me?</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:wght@300;400;500;600&family=Great+Vibes&family=Marcellus&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="film-grain" aria-hidden="true"></div>
+  <div class="vignette" aria-hidden="true"></div>
+  <canvas id="hearts" aria-hidden="true"></canvas>
+  <canvas id="petals" aria-hidden="true"></canvas>
+
+  <header class="hero">
+    <div class="hero__glow"></div>
+    <div class="hero__content">
+      <p class="eyebrow">A Love Story for Preeti</p>
+      <h1 class="title">Will You Be Mine, Forever?</h1>
+      <p class="subtitle">
+        In a world full of noise, you are my quiet miracle. Today I kneel with a ring and a heart
+        that has only ever belonged to you.
+      </p>
+      <p class="subtitle soft">
+        The lights soften, time slows, and my eyes find only you. This moment is ours, Preeti.
+      </p>
+      <div class="hero__actions">
+        <button class="cta" id="revealBtn">Reveal My Promise</button>
+        <button class="ghost" id="musicBtn" aria-pressed="false">Play Our Moment</button>
+      </div>
+    </div>
+
+    <div class="proposal-stage" aria-label="Boy kneeling with a ring, proposing">
+      <div class="moon"></div>
+      <div class="sparkle"></div>
+      <div class="soft-light"></div>
+      <div class="stage-floor"></div>
+      <div class="girl">
+        <span class="girl__head"></span>
+        <span class="girl__body"></span>
+        <span class="girl__arm"></span>
+      </div>
+      <div class="boy">
+        <span class="boy__head"></span>
+        <span class="boy__body"></span>
+        <span class="boy__leg"></span>
+        <span class="boy__arm"></span>
+        <span class="ring-box"></span>
+      </div>
+      <div class="stage-text">Preeti, my love, my forever.</div>
+    </div>
+  </header>
+
+  <main class="story" id="story">
+    <section class="scene reveal">
+      <div class="scene__text">
+        <h2>When I Look At You</h2>
+        <p>
+          Preeti, you are the softness in my chaos and the spark in my calm. I see a lifetime of sunsets
+          in your smile, and I want to spend them all with you.
+        </p>
+        <p>
+          I kneel today with a ring, but more importantly with every promise I have ever carried — to love
+          you fiercely, protect your dreams, and hold your heart with tenderness.
+        </p>
+        <p class="whisper">I want forever, and I want it with you.</p>
+      </div>
+      <div class="scene__media">
+        <img
+          src="https://media1.tenor.com/m/FOmHIS56JcAAAAAd/proposal.gif"
+          alt="Romantic silhouette proposal animation"
+          loading="lazy"
+        />
+      </div>
+    </section>
+
+    <section class="scene reveal reverse">
+      <div class="scene__media">
+        <img
+          src="https://media1.tenor.com/m/KuQ4r42U1uAAAAAd/heart-bubble-pops.gif"
+          alt="Floating hearts animation"
+          loading="lazy"
+        />
+      </div>
+      <div class="scene__text">
+        <h2>The Moment I Choose You</h2>
+        <p>
+          From the first glance to every shared dream, you have been my favorite story. I want to keep
+          writing it, page by page, with your hand in mine.
+        </p>
+        <p>
+          Will you accept this ring and the forever I am offering, wrapped in devotion and sealed with a
+          thousand kisses?
+        </p>
+        <p class="whisper">Say yes, and let time stand still for us.</p>
+      </div>
+    </section>
+
+    <section class="scene reveal">
+      <div class="scene__text">
+        <h2>My Heart Knows Your Name</h2>
+        <p>
+          Preeti, you are my home, my greatest adventure, my forever. Say yes, and let me spend every sunrise
+          proving my love to you.
+        </p>
+        <p>
+          I want to walk into every tomorrow with you — your laughter, your dreams, your hand in mine.
+        </p>
+      </div>
+      <div class="scene__media">
+        <img
+          src="https://media1.tenor.com/m/nhqkGQU8bXkAAAAd/propose-wedding.gif"
+          alt="Couple proposal on the beach"
+          loading="lazy"
+        />
+      </div>
+    </section>
+
+    <section class="proposal reveal">
+      <div class="proposal__card">
+        <div class="ring">💍</div>
+        <h2>Preeti, Will You Marry Me?</h2>
+        <p>
+          You are my once-in-a-lifetime, my always. Say yes, and let me love you in every possible way — today,
+          tomorrow, forever.
+        </p>
+        <div class="proposal__actions">
+          <button class="cta" id="yesBtn">Yes, My Love</button>
+          <button class="ghost" id="promiseBtn">Tell Me Your Promise</button>
+        </div>
+      </div>
+      <div class="proposal__gifs">
+        <img
+          src="https://media.tenor.com/T0O7GuRpSNQAAAAM/ghosttwf-hearts.gif"
+          alt="Romantic love animation"
+          loading="lazy"
+        />
+        <img
+          src="https://media.tenor.com/pn7wTE3CFSkAAAAM/heart-bubble-pops.gif"
+          alt="Glowing love animation"
+          loading="lazy"
+        />
+      </div>
+    </section>
+  </main>
+
+  <div class="modal" id="modal" aria-hidden="true" role="dialog" aria-labelledby="modalTitle">
+    <div class="modal__content">
+      <h3 id="modalTitle">My Promise to You</h3>
+      <p>
+        I promise to be your calm in every storm, your biggest cheerleader, and the hand you can always reach for.
+        I promise to love you endlessly, protect your heart, and choose you every single day.
+      </p>
+      <button class="cta" id="closeModal">Hold Me Close</button>
+    </div>
+  </div>
+
+  <audio id="music" loop>
+    <source src="https://cdn.pixabay.com/audio/2022/10/25/audio_593e8481a1.mp3" type="audio/mpeg" />
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
